@@ -35,6 +35,8 @@ jobs:
 
       - name: Seed baseline data
         run: npm run db:seed
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
 
       - name: Run v1 regression verify
         run: npm run verify:v1
