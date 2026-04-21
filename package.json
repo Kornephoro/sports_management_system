@@ -1,0 +1,58 @@
+{
+  "name": "sports-management-system",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "prisma:generate": "prisma generate",
+    "prisma:validate": "prisma validate",
+    "db:migrate:status": "prisma migrate status",
+    "db:migrate:deploy": "prisma migrate deploy",
+    "db:seed": "prisma db seed",
+    "db:cleanup:real-training": "tsx scripts/cleanup-real-training-data.ts",
+    "db:clear:training": "tsx scripts/clear-training-main-chain.ts",
+    "db:restore:overdue-test": "tsx scripts/maintenance/restore-overdue-test-sequences.ts",
+    "verify:round4": "tsx scripts/verify-round4-use-cases.ts",
+    "verify:round6": "tsx scripts/verify-round6-observations.ts",
+    "verify:round7": "tsx scripts/verify-round7-evidence.ts",
+    "verify:round8": "tsx scripts/verify-round8-constraints-injuries.ts",
+    "verify:round32": "node --import tsx scripts/verify-round32-progression.ts",
+    "verify:round33": "node --import tsx scripts/verify-round33.ts",
+    "verify:errors": "tsx scripts/verify-round9-error-paths.ts",
+    "verify:ui-structure": "node scripts/verify-ui-structure.mjs",
+    "verify:v1": "tsx scripts/verify-v1-stability.ts",
+    "verify:demo-readiness": "tsx scripts/verify-demo-readiness.ts",
+    "preflight:v1": "npm run typecheck && npm run verify:v1 && npm run verify:ui-structure",
+    "muscle-map:generate-candidates": "python scripts/muscle-map/generate-candidates.py",
+    "muscle-map:validate": "python scripts/muscle-map/validate-definitions.py"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.19.0",
+    "@supabase/ssr": "^0.10.0",
+    "@supabase/supabase-js": "^2.101.1",
+    "lucide-react": "^1.8.0",
+    "next": "16.2.2",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.2",
+    "prisma": "^6.19.0",
+    "tailwindcss": "^4",
+    "tsx": "^4.21.0",
+    "typescript": "^5"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.mjs"
+  }
+}

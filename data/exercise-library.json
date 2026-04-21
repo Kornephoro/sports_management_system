@@ -1,0 +1,1081 @@
+[
+  {
+    "id": "7d86dbdd-894f-4884-b08a-3ea4cab51488",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "杠铃深蹲",
+    "aliases": [
+      "深蹲",
+      "Barbell Squat",
+      "杠铃蹲",
+      "Back Squat"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "strength",
+    "category": "compound",
+    "movement_pattern": "squat_knee_dominant",
+    "primary_regions": [
+      "quads"
+    ],
+    "secondary_regions": [
+      "hamstrings",
+      "abs"
+    ],
+    "tags": [
+      "barbell",
+      "bilateral"
+    ],
+    "description": "杠铃置于背部，通过屈髋屈膝完成下蹲与站起。",
+    "enabled": true,
+    "notes": "定义备注：杠铃置于背部，通过屈髋屈膝完成下蹲与站起。\n动作提示：\n- 核心收紧保持脊柱中立\n- 膝盖与脚尖方向一致\n- 下蹲至大腿至少平行地面\n定义属性：is_bodyweight=false; allow_extra_load=false; allow_assistance=false",
+    "created_at": "2026-04-06T07:43:17.304Z",
+    "updated_at": "2026-04-10T13:56:24.148Z"
+  },
+  {
+    "id": "cf853dcc-afad-46f0-a261-a98907abe3cb",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "前蹲",
+    "aliases": [
+      "Front Squat"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "strength",
+    "category": "compound",
+    "movement_pattern": "squat_knee_dominant",
+    "primary_regions": [
+      "quads"
+    ],
+    "secondary_regions": [
+      "abs"
+    ],
+    "tags": [
+      "bilateral"
+    ],
+    "description": "杠铃置于肩前位置进行深蹲。",
+    "enabled": true,
+    "notes": "定义备注：杠铃置于肩前位置进行深蹲。\n动作提示：\n- 肘部抬高保持杠铃稳定\n- 躯干保持更直立\n- 避免塌腰\n定义属性：is_bodyweight=false; allow_extra_load=false; allow_assistance=false",
+    "created_at": "2026-04-10T02:35:58.936Z",
+    "updated_at": "2026-04-10T13:56:24.150Z"
+  },
+  {
+    "id": "f78a37b6-0c6f-4776-8124-e3dfbbfa5224",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "硬拉",
+    "aliases": [
+      "Deadlift",
+      "Conventional Deadlift"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "strength",
+    "category": "compound",
+    "movement_pattern": "hip_hinge",
+    "primary_regions": [],
+    "secondary_regions": [
+      "hamstrings",
+      "lats"
+    ],
+    "tags": [
+      "bilateral"
+    ],
+    "description": "从地面将杠铃拉起至站立。",
+    "enabled": true,
+    "notes": "定义备注：从地面将杠铃拉起至站立。\n动作提示：\n- 背部保持中立\n- 杠铃贴近小腿\n- 发力从腿驱动再到髋\n定义属性：is_bodyweight=false; allow_extra_load=false; allow_assistance=false",
+    "created_at": "2026-04-10T02:35:58.936Z",
+    "updated_at": "2026-04-10T13:56:24.150Z"
+  },
+  {
+    "id": "08f4f6d4-c9e0-404f-bfac-171642e5651c",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "罗马尼亚硬拉",
+    "aliases": [
+      "RDL",
+      "Romanian Deadlift"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "strength",
+    "category": "compound",
+    "movement_pattern": "hip_hinge",
+    "primary_regions": [
+      "hamstrings"
+    ],
+    "secondary_regions": [],
+    "tags": [
+      "bilateral"
+    ],
+    "description": "保持微屈膝，通过髋关节主导完成下放与拉起。",
+    "enabled": true,
+    "notes": "定义备注：保持微屈膝，通过髋关节主导完成下放与拉起。\n动作提示：\n- 感受大腿后侧拉伸\n- 保持杠铃贴腿\n- 不要下背代偿\n定义属性：is_bodyweight=false; allow_extra_load=false; allow_assistance=false",
+    "created_at": "2026-04-10T02:35:58.936Z",
+    "updated_at": "2026-04-10T13:56:24.150Z"
+  },
+  {
+    "id": "c061a50f-4191-4dd2-a895-a5237979aad6",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "腿举",
+    "aliases": [
+      "Leg Press"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "strength",
+    "category": "compound",
+    "movement_pattern": "squat_knee_dominant",
+    "primary_regions": [
+      "quads"
+    ],
+    "secondary_regions": [],
+    "tags": [
+      "machine",
+      "bilateral"
+    ],
+    "description": "通过器械推蹬负重。",
+    "enabled": true,
+    "notes": "定义备注：通过器械推蹬负重。\n动作提示：\n- 控制下放速度\n- 避免膝内扣\n- 脚掌稳定发力\n定义属性：is_bodyweight=false; allow_extra_load=false; allow_assistance=false",
+    "created_at": "2026-04-10T02:35:58.936Z",
+    "updated_at": "2026-04-10T13:56:24.150Z"
+  },
+  {
+    "id": "d613d7c5-ecea-4e9d-9cf7-641854bf42bf",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "腿屈伸",
+    "aliases": [
+      "Leg Extension"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "strength",
+    "category": "isolation",
+    "movement_pattern": "lower_isolation",
+    "primary_regions": [
+      "quads"
+    ],
+    "secondary_regions": [],
+    "tags": [
+      "machine",
+      "bilateral"
+    ],
+    "description": "器械孤立训练股四头肌。",
+    "enabled": true,
+    "notes": "定义备注：器械孤立训练股四头肌。\n动作提示：\n- 顶峰停顿收缩\n- 缓慢下放\n- 避免借力\n定义属性：is_bodyweight=false; allow_extra_load=false; allow_assistance=false",
+    "created_at": "2026-04-10T02:35:58.936Z",
+    "updated_at": "2026-04-10T13:56:24.150Z"
+  },
+  {
+    "id": "ec5d60bf-b8e1-46c1-a8a0-a5d83cbf53f3",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "腿弯举",
+    "aliases": [
+      "Leg Curl"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "strength",
+    "category": "isolation",
+    "movement_pattern": "lower_isolation",
+    "primary_regions": [
+      "hamstrings"
+    ],
+    "secondary_regions": [],
+    "tags": [
+      "machine",
+      "bilateral"
+    ],
+    "description": "器械训练腘绳肌。",
+    "enabled": true,
+    "notes": "定义备注：器械训练腘绳肌。\n动作提示：\n- 避免髋部抬起\n- 控制回放\n- 收缩到位\n定义属性：is_bodyweight=false; allow_extra_load=false; allow_assistance=false",
+    "created_at": "2026-04-10T02:35:58.936Z",
+    "updated_at": "2026-04-10T13:56:24.150Z"
+  },
+  {
+    "id": "114a2b01-7327-4443-ae65-f896deca821c",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "保加利亚分腿蹲",
+    "aliases": [
+      "Bulgarian Split Squat"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "strength",
+    "category": "compound",
+    "movement_pattern": "split_lunge",
+    "primary_regions": [
+      "quads"
+    ],
+    "secondary_regions": [
+      "abs"
+    ],
+    "tags": [
+      "unilateral"
+    ],
+    "description": "后脚抬高的单腿深蹲。",
+    "enabled": true,
+    "notes": "定义备注：后脚抬高的单腿深蹲。\n动作提示：\n- 前脚稳定发力\n- 躯干微前倾\n- 保持平衡\n定义属性：is_bodyweight=false; allow_extra_load=true; allow_assistance=false",
+    "created_at": "2026-04-10T02:35:58.936Z",
+    "updated_at": "2026-04-18T02:27:41.814Z"
+  },
+  {
+    "id": "6538100c-c88b-4c96-831b-f6940f57c3be",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "杠铃卧推",
+    "aliases": [
+      "Bench Press",
+      "Barbell Bench Press"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "strength",
+    "category": "compound",
+    "movement_pattern": "horizontal_push",
+    "primary_regions": [
+      "chest"
+    ],
+    "secondary_regions": [
+      "triceps"
+    ],
+    "tags": [
+      "barbell",
+      "bilateral"
+    ],
+    "description": "卧姿推举杠铃。",
+    "enabled": true,
+    "notes": "定义备注：卧姿推举杠铃。\n动作提示：\n- 肩胛收紧\n- 杠铃下放至胸部\n- 保持稳定路径\n定义属性：is_bodyweight=false; allow_extra_load=false; allow_assistance=false",
+    "created_at": "2026-04-10T02:35:58.936Z",
+    "updated_at": "2026-04-10T13:56:24.150Z"
+  },
+  {
+    "id": "7f214b86-3cdc-4303-9fa7-8c57adb1219e",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "哑铃卧推",
+    "aliases": [
+      "Dumbbell Bench Press"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "strength",
+    "category": "compound",
+    "movement_pattern": "horizontal_push",
+    "primary_regions": [
+      "chest"
+    ],
+    "secondary_regions": [
+      "triceps"
+    ],
+    "tags": [
+      "dumbbell",
+      "bilateral"
+    ],
+    "description": "使用哑铃进行卧推。",
+    "enabled": true,
+    "notes": "定义备注：使用哑铃进行卧推。\n动作提示：\n- 控制左右稳定\n- 动作轨迹自然\n- 避免借力\n定义属性：is_bodyweight=false; allow_extra_load=false; allow_assistance=false",
+    "created_at": "2026-04-10T02:35:58.936Z",
+    "updated_at": "2026-04-10T13:56:24.150Z"
+  },
+  {
+    "id": "bbb7bfa2-fa5b-4722-a219-227c7872fd78",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "引体向上",
+    "aliases": [
+      "Pull-up",
+      "Chin-up",
+      "引体"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "bodyweight_plus",
+    "recording_mode": "bodyweight_load",
+    "category": "compound",
+    "movement_pattern": "vertical_pull",
+    "primary_regions": [
+      "lats"
+    ],
+    "secondary_regions": [
+      "abs"
+    ],
+    "tags": [
+      "bilateral",
+      "bodyweight"
+    ],
+    "description": "通过上肢拉动身体向上，使下巴接近或超过横杆的自重垂直拉动作。",
+    "enabled": true,
+    "notes": "定义备注：通过上肢拉动身体向上，使下巴接近或超过横杆的自重垂直拉动作。\n动作提示：\n- 起始时肩胛先下沉再发力\n- 避免大幅摆动借力\n- 上拉时胸部主动靠近横杆\n定义属性：is_bodyweight=true; allow_extra_load=true; allow_assistance=true",
+    "created_at": "2026-04-10T13:56:24.150Z",
+    "updated_at": "2026-04-10T13:56:24.150Z"
+  },
+  {
+    "id": "634af7c0-4d57-49ce-830d-5430832c7c0b",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "高位下拉",
+    "aliases": [
+      "Lat Pulldown",
+      "下拉"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "strength",
+    "category": "compound",
+    "movement_pattern": "vertical_pull",
+    "primary_regions": [
+      "lats"
+    ],
+    "secondary_regions": [],
+    "tags": [
+      "cable",
+      "bilateral"
+    ],
+    "description": "利用下拉器械将横杆从高位下拉至胸前的垂直拉动作。",
+    "enabled": true,
+    "notes": "定义备注：利用下拉器械将横杆从高位下拉至胸前的垂直拉动作。\n动作提示：\n- 先沉肩再拉肘\n- 避免过度后仰借力\n- 下拉到上胸附近并控制回放\n定义属性：is_bodyweight=false; allow_extra_load=false; allow_assistance=false",
+    "created_at": "2026-04-10T13:56:24.151Z",
+    "updated_at": "2026-04-10T13:56:24.151Z"
+  },
+  {
+    "id": "761b5505-03f2-47ef-a6a4-e6a527cd1887",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "杠铃划船",
+    "aliases": [
+      "Barbell Row",
+      "Bent-over Row"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "strength",
+    "category": "compound",
+    "movement_pattern": "horizontal_pull",
+    "primary_regions": [],
+    "secondary_regions": [
+      "lats"
+    ],
+    "tags": [
+      "barbell",
+      "bilateral"
+    ],
+    "description": "身体前倾位下，以杠铃进行水平拉动的复合动作。",
+    "enabled": true,
+    "notes": "定义备注：身体前倾位下，以杠铃进行水平拉动的复合动作。\n动作提示：\n- 躯干保持稳定角度\n- 杠铃拉向下胸或上腹\n- 避免借助腰部大幅反弹\n定义属性：is_bodyweight=false; allow_extra_load=false; allow_assistance=false",
+    "created_at": "2026-04-10T13:56:24.151Z",
+    "updated_at": "2026-04-10T13:56:24.151Z"
+  },
+  {
+    "id": "e520150f-117b-432f-a542-22a611a464cb",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "坐姿划船",
+    "aliases": [
+      "Seated Row",
+      "Cable Row"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "strength",
+    "category": "compound",
+    "movement_pattern": "horizontal_pull",
+    "primary_regions": [],
+    "secondary_regions": [
+      "lats"
+    ],
+    "tags": [
+      "cable",
+      "bilateral"
+    ],
+    "description": "坐姿利用绳索或器械向身体方向拉动把手的水平拉动作。",
+    "enabled": true,
+    "notes": "定义备注：坐姿利用绳索或器械向身体方向拉动把手的水平拉动作。\n动作提示：\n- 先收肩胛再拉手\n- 避免耸肩\n- 保持躯干稳定，不要前后甩动\n定义属性：is_bodyweight=false; allow_extra_load=false; allow_assistance=false",
+    "created_at": "2026-04-10T13:56:24.151Z",
+    "updated_at": "2026-04-10T13:56:24.151Z"
+  },
+  {
+    "id": "f67d3b66-43b4-4465-9c45-b82e41ab9901",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "面拉",
+    "aliases": [
+      "Face Pull"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "strength",
+    "category": "isolation",
+    "movement_pattern": "horizontal_pull",
+    "primary_regions": [],
+    "secondary_regions": [],
+    "tags": [
+      "bilateral"
+    ],
+    "description": "通过绳索将把手向面部方向拉回，强调后束与上背稳定的动作。",
+    "enabled": true,
+    "notes": "定义备注：通过绳索将把手向面部方向拉回，强调后束与上背稳定的动作。\n动作提示：\n- 肘部向两侧打开\n- 手拉向面部两侧而非胸前\n- 注意肩胛控制和外旋感觉\n定义属性：is_bodyweight=false; allow_extra_load=false; allow_assistance=false",
+    "created_at": "2026-04-10T13:56:24.151Z",
+    "updated_at": "2026-04-10T13:56:24.151Z"
+  },
+  {
+    "id": "9a7438e8-83a0-4ecd-b1c9-ee65541299a1",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "杠铃推举",
+    "aliases": [
+      "Barbell Overhead Press",
+      "OHP",
+      "Overhead Press"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "strength",
+    "category": "compound",
+    "movement_pattern": "vertical_push",
+    "primary_regions": [],
+    "secondary_regions": [
+      "triceps",
+      "abs"
+    ],
+    "tags": [
+      "barbell",
+      "bilateral"
+    ],
+    "description": "站姿或坐姿将杠铃从肩上方向头顶推起的垂直推动作。",
+    "enabled": true,
+    "notes": "定义备注：站姿或坐姿将杠铃从肩上方向头顶推起的垂直推动作。\n动作提示：\n- 核心收紧避免后仰过大\n- 杠铃路径尽量贴近面部中线\n- 顶端锁定时保持肩部稳定\n定义属性：is_bodyweight=false; allow_extra_load=false; allow_assistance=false",
+    "created_at": "2026-04-10T13:56:24.151Z",
+    "updated_at": "2026-04-10T13:56:24.151Z"
+  },
+  {
+    "id": "75cc0f01-e053-41ae-b169-538a885caf5c",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "哑铃肩推",
+    "aliases": [
+      "Dumbbell Shoulder Press",
+      "Dumbbell Overhead Press"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "strength",
+    "category": "compound",
+    "movement_pattern": "vertical_push",
+    "primary_regions": [],
+    "secondary_regions": [
+      "triceps",
+      "abs"
+    ],
+    "tags": [
+      "dumbbell",
+      "bilateral"
+    ],
+    "description": "使用哑铃进行头顶上推的肩部复合动作。",
+    "enabled": true,
+    "notes": "定义备注：使用哑铃进行头顶上推的肩部复合动作。\n动作提示：\n- 左右发力保持平衡\n- 避免耸肩代偿\n- 下放时控制到位后再推起\n定义属性：is_bodyweight=false; allow_extra_load=false; allow_assistance=false",
+    "created_at": "2026-04-10T13:56:24.151Z",
+    "updated_at": "2026-04-10T13:56:24.151Z"
+  },
+  {
+    "id": "ca7cbd7d-f7d2-4b85-94c4-bb35715a7e36",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "侧平举",
+    "aliases": [
+      "Lateral Raise",
+      "Dumbbell Lateral Raise"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "strength",
+    "category": "isolation",
+    "movement_pattern": "upper_isolation",
+    "primary_regions": [
+      "delt_mid"
+    ],
+    "secondary_regions": [],
+    "tags": [
+      "bilateral"
+    ],
+    "description": "通过肩外展将哑铃从身体两侧抬起，主要训练三角肌中束。",
+    "enabled": true,
+    "notes": "定义备注：通过肩外展将哑铃从身体两侧抬起，主要训练三角肌中束。\n动作提示：\n- 肘部微屈，避免手臂完全锁死\n- 抬至肩高附近即可\n- 控制离心，不要借摆\n定义属性：is_bodyweight=false; allow_extra_load=false; allow_assistance=false",
+    "created_at": "2026-04-10T13:56:24.151Z",
+    "updated_at": "2026-04-18T07:44:12.523Z"
+  },
+  {
+    "id": "64f09afc-1528-4906-b7da-d53b0c7e9998",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "杠铃弯举",
+    "aliases": [
+      "Barbell Curl",
+      "Biceps Curl"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "strength",
+    "category": "isolation",
+    "movement_pattern": "upper_isolation",
+    "primary_regions": [],
+    "secondary_regions": [],
+    "tags": [
+      "barbell",
+      "bilateral"
+    ],
+    "description": "通过肘关节屈曲将杠铃向上弯起的手臂训练动作。",
+    "enabled": true,
+    "notes": "定义备注：通过肘关节屈曲将杠铃向上弯起的手臂训练动作。\n动作提示：\n- 上臂尽量固定在身体两侧\n- 避免身体后仰借力\n- 顶端停顿感受收缩\n定义属性：is_bodyweight=false; allow_extra_load=false; allow_assistance=false",
+    "created_at": "2026-04-10T13:56:24.151Z",
+    "updated_at": "2026-04-10T13:56:24.151Z"
+  },
+  {
+    "id": "6f76a877-5b5c-401e-b5de-7c96cbb6cce9",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "绳索下压",
+    "aliases": [
+      "Triceps Pushdown",
+      "Cable Pushdown"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "strength",
+    "category": "isolation",
+    "movement_pattern": "upper_isolation",
+    "primary_regions": [
+      "triceps"
+    ],
+    "secondary_regions": [],
+    "tags": [
+      "cable",
+      "bilateral"
+    ],
+    "description": "利用绳索或直杆向下伸肘发力，主要训练肱三头肌。",
+    "enabled": true,
+    "notes": "定义备注：利用绳索或直杆向下伸肘发力，主要训练肱三头肌。\n动作提示：\n- 肘部贴近身体两侧\n- 下压到底充分伸直\n- 回放时控制速度避免反弹\n定义属性：is_bodyweight=false; allow_extra_load=false; allow_assistance=false",
+    "created_at": "2026-04-10T13:56:24.151Z",
+    "updated_at": "2026-04-10T13:56:24.151Z"
+  },
+  {
+    "id": "6b9c9cff-2437-435a-aae6-37147823770a",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "双杠臂屈伸",
+    "aliases": [
+      "Dips",
+      "Parallel Bar Dip"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "bodyweight_plus",
+    "recording_mode": "bodyweight_load",
+    "category": "compound",
+    "movement_pattern": "vertical_push",
+    "primary_regions": [
+      "triceps"
+    ],
+    "secondary_regions": [
+      "chest"
+    ],
+    "tags": [
+      "bodyweight",
+      "bilateral"
+    ],
+    "description": "利用双杠进行自重推起的复合动作。",
+    "enabled": true,
+    "notes": "定义备注：利用双杠进行自重推起的复合动作。\n动作提示：\n- 身体略微前倾可增加胸部参与\n- 肘部向后而不是外张\n- 避免下放过深导致肩部压力过大\n定义属性：is_bodyweight=true; allow_extra_load=true; allow_assistance=true",
+    "created_at": "2026-04-12T13:30:09.581Z",
+    "updated_at": "2026-04-12T13:30:09.581Z"
+  },
+  {
+    "id": "8463d923-bfe3-4121-bf94-951797714af2",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "上斜卧推",
+    "aliases": [
+      "Incline Bench Press"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "strength",
+    "category": "compound",
+    "movement_pattern": "horizontal_push",
+    "primary_regions": [],
+    "secondary_regions": [
+      "triceps"
+    ],
+    "tags": [
+      "bilateral"
+    ],
+    "description": "在上斜角度进行卧推，强化上胸。",
+    "enabled": true,
+    "notes": "定义备注：在上斜角度进行卧推，强化上胸。\n动作提示：\n- 肩胛稳定收紧\n- 控制杠铃下放路径\n- 避免耸肩\n定义属性：is_bodyweight=false; allow_extra_load=false; allow_assistance=false",
+    "created_at": "2026-04-12T13:30:09.588Z",
+    "updated_at": "2026-04-12T13:30:09.588Z"
+  },
+  {
+    "id": "4184bf11-7a5e-4715-9200-074349ad229c",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "俯卧撑",
+    "aliases": [
+      "Push-up"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "bodyweight_plus",
+    "recording_mode": "bodyweight_load",
+    "category": "compound",
+    "movement_pattern": "horizontal_push",
+    "primary_regions": [
+      "chest"
+    ],
+    "secondary_regions": [
+      "triceps",
+      "abs"
+    ],
+    "tags": [
+      "bodyweight",
+      "bilateral"
+    ],
+    "description": "基础自重推类动作。",
+    "enabled": true,
+    "notes": "定义备注：基础自重推类动作。\n动作提示：\n- 身体保持一条直线\n- 核心收紧\n- 下降至胸接近地面\n定义属性：is_bodyweight=true; allow_extra_load=true; allow_assistance=true",
+    "created_at": "2026-04-12T13:30:09.588Z",
+    "updated_at": "2026-04-12T13:30:09.588Z"
+  },
+  {
+    "id": "a1c06e07-df7b-451c-857a-f7a50aa3a83c",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "飞鸟",
+    "aliases": [
+      "Dumbbell Fly",
+      "Chest Fly"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "strength",
+    "category": "isolation",
+    "movement_pattern": "upper_isolation",
+    "primary_regions": [
+      "chest"
+    ],
+    "secondary_regions": [],
+    "tags": [
+      "dumbbell",
+      "bilateral"
+    ],
+    "description": "孤立胸部的开合动作。",
+    "enabled": true,
+    "notes": "定义备注：孤立胸部的开合动作。\n动作提示：\n- 手臂保持微屈\n- 专注胸部拉伸与收缩\n- 避免过度下放伤肩\n定义属性：is_bodyweight=false; allow_extra_load=false; allow_assistance=false",
+    "created_at": "2026-04-12T13:30:09.588Z",
+    "updated_at": "2026-04-12T13:30:09.588Z"
+  },
+  {
+    "id": "cff00c73-63c4-4ce1-9344-171c1ce32f3d",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "反向飞鸟",
+    "aliases": [
+      "Reverse Fly",
+      "Rear Delt Fly"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "strength",
+    "category": "isolation",
+    "movement_pattern": "upper_isolation",
+    "primary_regions": [],
+    "secondary_regions": [],
+    "tags": [
+      "dumbbell",
+      "bilateral"
+    ],
+    "description": "强化后束和上背的孤立动作。",
+    "enabled": true,
+    "notes": "定义备注：强化后束和上背的孤立动作。\n动作提示：\n- 动作过程中保持控制\n- 避免借力摆动\n- 专注肩后侧发力\n定义属性：is_bodyweight=false; allow_extra_load=false; allow_assistance=false",
+    "created_at": "2026-04-12T13:30:09.588Z",
+    "updated_at": "2026-04-12T13:30:09.588Z"
+  },
+  {
+    "id": "e26ac764-81bc-403d-9acc-df77175a39ed",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "小腿提踵",
+    "aliases": [
+      "Calf Raise"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "bodyweight_plus",
+    "recording_mode": "bodyweight_load",
+    "category": "isolation",
+    "movement_pattern": "lower_isolation",
+    "primary_regions": [
+      "calves"
+    ],
+    "secondary_regions": [],
+    "tags": [
+      "bodyweight",
+      "bilateral"
+    ],
+    "description": "小腿肌群训练动作。",
+    "enabled": true,
+    "notes": "定义备注：小腿肌群训练动作。\n动作提示：\n- 顶端充分收缩\n- 下放控制幅度\n- 避免借助弹性反弹\n定义属性：is_bodyweight=true; allow_extra_load=true; allow_assistance=false",
+    "created_at": "2026-04-12T13:30:09.588Z",
+    "updated_at": "2026-04-12T13:30:09.588Z"
+  },
+  {
+    "id": "74e18fa5-ab95-4ce9-9278-0f88be1c5764",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "平板支撑",
+    "aliases": [
+      "Plank"
+    ],
+    "default_record_mode": "duration",
+    "default_load_model": "absolute",
+    "recording_mode": "duration_only",
+    "category": "compound",
+    "movement_pattern": "core",
+    "primary_regions": [
+      "abs"
+    ],
+    "secondary_regions": [],
+    "tags": [
+      "bodyweight",
+      "isometric",
+      "bilateral"
+    ],
+    "description": "核心抗伸展训练。",
+    "enabled": true,
+    "notes": "定义备注：核心抗伸展训练。\n动作提示：\n- 身体保持直线\n- 避免塌腰\n- 核心持续紧张\n定义属性：is_bodyweight=true; allow_extra_load=true; allow_assistance=false",
+    "created_at": "2026-04-12T13:30:09.588Z",
+    "updated_at": "2026-04-12T13:30:09.588Z"
+  },
+  {
+    "id": "5f363e61-dbf0-4de1-b01e-a6deebd6f613",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "仰卧起坐",
+    "aliases": [
+      "Sit-up"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "reps_only",
+    "category": "compound",
+    "movement_pattern": "core",
+    "primary_regions": [
+      "abs"
+    ],
+    "secondary_regions": [
+      "obliques"
+    ],
+    "tags": [
+      "bodyweight",
+      "bilateral"
+    ],
+    "description": "经典核心训练动作。",
+    "enabled": true,
+    "notes": "定义备注：经典核心训练动作。\n动作提示：\n- 控制上起节奏\n- 避免借力甩起\n- 专注腹部发力\n定义属性：is_bodyweight=true; allow_extra_load=true; allow_assistance=false",
+    "created_at": "2026-04-12T13:30:09.588Z",
+    "updated_at": "2026-04-12T13:30:09.588Z"
+  },
+  {
+    "id": "28d212e3-7fcc-407a-8498-94677fa20561",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "悬垂举腿",
+    "aliases": [
+      "Hanging Leg Raise"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "reps_only",
+    "category": "compound",
+    "movement_pattern": "core",
+    "primary_regions": [
+      "abs"
+    ],
+    "secondary_regions": [
+      "obliques"
+    ],
+    "tags": [
+      "bodyweight",
+      "bilateral"
+    ],
+    "description": "悬挂状态下抬腿训练核心。",
+    "enabled": true,
+    "notes": "定义备注：悬挂状态下抬腿训练核心。\n动作提示：\n- 避免摆动\n- 控制下放\n- 尽量提高腿部高度\n定义属性：is_bodyweight=true; allow_extra_load=true; allow_assistance=true",
+    "created_at": "2026-04-12T13:30:09.588Z",
+    "updated_at": "2026-04-12T13:30:09.588Z"
+  },
+  {
+    "id": "d3f11c0c-d9ae-4c16-acd5-73514aa457d3",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "农夫行走",
+    "aliases": [
+      "Farmer's Walk"
+    ],
+    "default_record_mode": "duration",
+    "default_load_model": "absolute",
+    "recording_mode": "duration_only",
+    "category": "compound",
+    "movement_pattern": "carry",
+    "primary_regions": [],
+    "secondary_regions": [
+      "abs"
+    ],
+    "tags": [
+      "bilateral"
+    ],
+    "description": "负重行走强化握力与核心稳定。",
+    "enabled": true,
+    "notes": "定义备注：负重行走强化握力与核心稳定。\n动作提示：\n- 保持身体直立\n- 核心收紧\n- 步伐稳定均匀\n定义属性：is_bodyweight=false; allow_extra_load=false; allow_assistance=false",
+    "created_at": "2026-04-12T13:30:09.589Z",
+    "updated_at": "2026-04-12T13:30:09.589Z"
+  },
+  {
+    "id": "1596f9a9-f1cf-4783-94fc-7ccd7dbc1482",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "臀桥",
+    "aliases": [
+      "Glute Bridge"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "bodyweight_plus",
+    "recording_mode": "bodyweight_load",
+    "category": "compound",
+    "movement_pattern": "hip_hinge",
+    "primary_regions": [],
+    "secondary_regions": [
+      "hamstrings",
+      "abs"
+    ],
+    "tags": [
+      "bodyweight",
+      "bilateral"
+    ],
+    "description": "仰卧状态下通过髋关节伸展抬起臀部的动作。",
+    "enabled": true,
+    "notes": "定义备注：仰卧状态下通过髋关节伸展抬起臀部的动作。\n动作提示：\n- 顶端夹紧臀部\n- 避免腰部过度代偿\n- 脚跟发力\n定义属性：is_bodyweight=true; allow_extra_load=true; allow_assistance=false",
+    "created_at": "2026-04-12T13:33:01.437Z",
+    "updated_at": "2026-04-12T13:33:01.437Z"
+  },
+  {
+    "id": "d30238e3-5c89-4407-bdd4-6e46917483c5",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "杠铃臀推",
+    "aliases": [
+      "Barbell Hip Thrust"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "strength",
+    "category": "compound",
+    "movement_pattern": "hip_hinge",
+    "primary_regions": [],
+    "secondary_regions": [
+      "hamstrings",
+      "abs"
+    ],
+    "tags": [
+      "barbell",
+      "bilateral"
+    ],
+    "description": "通过杠铃负重强化臀部的髋伸展动作。",
+    "enabled": true,
+    "notes": "定义备注：通过杠铃负重强化臀部的髋伸展动作。\n动作提示：\n- 顶端完全伸髋\n- 避免下背代偿\n- 控制下放\n定义属性：is_bodyweight=false; allow_extra_load=false; allow_assistance=false",
+    "created_at": "2026-04-12T13:33:01.439Z",
+    "updated_at": "2026-04-12T13:33:01.439Z"
+  },
+  {
+    "id": "7312c4e3-e01e-414a-9c93-54e5793b5532",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "箱式深蹲",
+    "aliases": [
+      "Box Squat"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "strength",
+    "category": "compound",
+    "movement_pattern": "squat_knee_dominant",
+    "primary_regions": [],
+    "secondary_regions": [
+      "quads",
+      "abs"
+    ],
+    "tags": [
+      "bilateral"
+    ],
+    "description": "通过触碰箱子控制深度的深蹲变式。",
+    "enabled": true,
+    "notes": "定义备注：通过触碰箱子控制深度的深蹲变式。\n动作提示：\n- 轻触箱子而非完全坐下\n- 保持核心紧张\n- 避免反弹\n定义属性：is_bodyweight=false; allow_extra_load=false; allow_assistance=false",
+    "created_at": "2026-04-12T13:33:01.439Z",
+    "updated_at": "2026-04-12T13:33:01.439Z"
+  },
+  {
+    "id": "af7cdd16-0d3b-4636-a869-ca919b95dc7b",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "相扑硬拉",
+    "aliases": [
+      "Sumo Deadlift"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "strength",
+    "category": "compound",
+    "movement_pattern": "hip_hinge",
+    "primary_regions": [],
+    "secondary_regions": [
+      "adductors",
+      "quads"
+    ],
+    "tags": [
+      "bilateral"
+    ],
+    "description": "宽站距硬拉，强调臀部与内收肌参与。",
+    "enabled": true,
+    "notes": "定义备注：宽站距硬拉，强调臀部与内收肌参与。\n动作提示：\n- 膝盖外推\n- 背部保持中立\n- 杠铃贴近身体\n定义属性：is_bodyweight=false; allow_extra_load=false; allow_assistance=false",
+    "created_at": "2026-04-12T13:33:01.439Z",
+    "updated_at": "2026-04-12T13:33:01.439Z"
+  },
+  {
+    "id": "5a7eab59-034f-4a27-bdda-4a9bf0007230",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "直腿硬拉",
+    "aliases": [
+      "Stiff-leg Deadlift"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "strength",
+    "category": "compound",
+    "movement_pattern": "hip_hinge",
+    "primary_regions": [
+      "hamstrings"
+    ],
+    "secondary_regions": [],
+    "tags": [
+      "bilateral"
+    ],
+    "description": "强调腿后侧拉伸的硬拉变式。",
+    "enabled": true,
+    "notes": "定义备注：强调腿后侧拉伸的硬拉变式。\n动作提示：\n- 腿部尽量保持伸直\n- 感受腘绳肌拉伸\n- 避免弓背\n定义属性：is_bodyweight=false; allow_extra_load=false; allow_assistance=false",
+    "created_at": "2026-04-12T13:33:01.439Z",
+    "updated_at": "2026-04-12T13:33:01.439Z"
+  },
+  {
+    "id": "c35b6715-3758-4846-a705-a7b6b456fa99",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "行进弓步",
+    "aliases": [
+      "Walking Lunge"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "bodyweight_plus",
+    "recording_mode": "bodyweight_load",
+    "category": "compound",
+    "movement_pattern": "split_lunge",
+    "primary_regions": [
+      "quads"
+    ],
+    "secondary_regions": [
+      "abs"
+    ],
+    "tags": [
+      "bodyweight",
+      "unilateral"
+    ],
+    "description": "向前移动的弓步动作。",
+    "enabled": true,
+    "notes": "定义备注：向前移动的弓步动作。\n动作提示：\n- 步幅稳定\n- 膝盖方向控制\n- 躯干保持直立\n定义属性：is_bodyweight=true; allow_extra_load=true; allow_assistance=false",
+    "created_at": "2026-04-12T13:33:01.440Z",
+    "updated_at": "2026-04-12T13:33:01.440Z"
+  },
+  {
+    "id": "7b088d05-74be-4e05-9d0b-88950d2aa3e3",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "登台阶",
+    "aliases": [
+      "Step-up"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "bodyweight_plus",
+    "recording_mode": "bodyweight_load",
+    "category": "compound",
+    "movement_pattern": "split_lunge",
+    "primary_regions": [
+      "quads"
+    ],
+    "secondary_regions": [
+      "abs"
+    ],
+    "tags": [
+      "bodyweight",
+      "unilateral"
+    ],
+    "description": "单腿登上平台的功能性动作。",
+    "enabled": true,
+    "notes": "定义备注：单腿登上平台的功能性动作。\n动作提示：\n- 发力腿完全主导\n- 避免借助另一条腿蹬地\n- 控制下放\n定义属性：is_bodyweight=true; allow_extra_load=true; allow_assistance=false",
+    "created_at": "2026-04-12T13:33:01.440Z",
+    "updated_at": "2026-04-12T13:33:01.440Z"
+  },
+  {
+    "id": "65b18e97-170d-413f-88e7-70969d0caab8",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "死虫",
+    "aliases": [
+      "Dead Bug"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "reps_only",
+    "category": "isolation",
+    "movement_pattern": "core",
+    "primary_regions": [
+      "abs"
+    ],
+    "secondary_regions": [],
+    "tags": [
+      "bodyweight",
+      "bilateral"
+    ],
+    "description": "仰卧抗伸展核心训练动作。",
+    "enabled": true,
+    "notes": "定义备注：仰卧抗伸展核心训练动作。\n动作提示：\n- 腰部贴地\n- 动作缓慢控制\n- 避免代偿\n定义属性：is_bodyweight=true; allow_extra_load=false; allow_assistance=false",
+    "created_at": "2026-04-12T13:33:01.440Z",
+    "updated_at": "2026-04-12T13:33:01.440Z"
+  },
+  {
+    "id": "cb6da7b1-3f15-4592-9e2c-5c6044066c99",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "俄罗斯转体",
+    "aliases": [
+      "Russian Twist"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "reps_only",
+    "category": "isolation",
+    "movement_pattern": "core",
+    "primary_regions": [
+      "obliques"
+    ],
+    "secondary_regions": [
+      "abs"
+    ],
+    "tags": [
+      "bodyweight",
+      "bilateral"
+    ],
+    "description": "坐姿进行躯干旋转的核心训练。",
+    "enabled": true,
+    "notes": "定义备注：坐姿进行躯干旋转的核心训练。\n动作提示：\n- 控制旋转节奏\n- 保持核心紧张\n- 避免摆动借力\n定义属性：is_bodyweight=true; allow_extra_load=true; allow_assistance=false",
+    "created_at": "2026-04-12T13:33:01.440Z",
+    "updated_at": "2026-04-12T13:33:01.440Z"
+  },
+  {
+    "id": "7f5e5b1e-c00c-4dd9-ac51-1ff114e5cb48",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "绳索卷腹",
+    "aliases": [
+      "Cable Crunch"
+    ],
+    "default_record_mode": "reps",
+    "default_load_model": "absolute",
+    "recording_mode": "strength",
+    "category": "isolation",
+    "movement_pattern": "core",
+    "primary_regions": [
+      "abs"
+    ],
+    "secondary_regions": [],
+    "tags": [
+      "cable",
+      "bilateral"
+    ],
+    "description": "利用绳索进行负重卷腹。",
+    "enabled": true,
+    "notes": "定义备注：利用绳索进行负重卷腹。\n动作提示：\n- 脊柱逐节卷曲\n- 避免用髋部带动\n- 控制回放\n定义属性：is_bodyweight=false; allow_extra_load=false; allow_assistance=false",
+    "created_at": "2026-04-12T13:33:01.440Z",
+    "updated_at": "2026-04-12T13:33:01.440Z"
+  }
+]

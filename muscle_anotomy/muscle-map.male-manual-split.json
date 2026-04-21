@@ -1,0 +1,354 @@
+{
+  "version": "2.1.0-manual-split",
+  "source": {
+    "type": "manual_split_derivative",
+    "base_asset": "human_male - 副本 (2) 1.svg",
+    "generated_file": "human_male_manual_split.svg"
+  },
+  "assets": {
+    "male": {
+      "file": "human_male_manual_split.svg",
+      "width": 1024,
+      "height": 1024,
+      "view_box": "0 0 1024 1024"
+    }
+  },
+  "muscles": [
+    {
+      "id": "chestUpper",
+      "path_id": "muscle_chestUpper",
+      "display_name_en": "Chest Upper",
+      "display_name_zh": "",
+      "genders": [
+        "male"
+      ],
+      "path_ids": [
+        "muscle_chestUpper",
+        "muscle_chestUpper_2"
+      ]
+    },
+    {
+      "id": "chestMidLower",
+      "path_id": "muscle_chestMidLower",
+      "display_name_en": "Chest Mid-Lower",
+      "display_name_zh": "",
+      "genders": [
+        "male"
+      ],
+      "path_ids": [
+        "muscle_chestMidLower",
+        "muscle_chestMidLower_2"
+      ]
+    },
+    {
+      "id": "lats",
+      "path_id": "muscle_lats",
+      "display_name_en": "Lats",
+      "display_name_zh": "",
+      "genders": [
+        "male"
+      ]
+    },
+    {
+      "id": "trapsUpper",
+      "path_id": "muscle_trapsUpper",
+      "display_name_en": "Traps Upper",
+      "display_name_zh": "",
+      "genders": [
+        "male"
+      ],
+      "path_ids": [
+        "muscle_trapsUpper",
+        "muscle_trapsUpper_2",
+        "muscle_trapsUpper_3",
+        "muscle_trapsUpper_4"
+      ]
+    },
+    {
+      "id": "trapsMidLower",
+      "path_id": "muscle_trapsMidLower",
+      "display_name_en": "Traps Mid-Lower",
+      "display_name_zh": "",
+      "genders": [
+        "male"
+      ]
+    },
+    {
+      "id": "rotatorCuffs",
+      "path_id": "muscle_rotatorCuffs",
+      "display_name_en": "Rotator Cuffs",
+      "display_name_zh": "",
+      "genders": [
+        "male"
+      ],
+      "path_ids": [
+        "muscle_rotatorCuffs",
+        "muscle_rotatorCuffs_2"
+      ]
+    },
+    {
+      "id": "lowerBack",
+      "path_id": "muscle_lowerBack",
+      "display_name_en": "Lower Back",
+      "display_name_zh": "",
+      "genders": [
+        "male"
+      ]
+    },
+    {
+      "id": "frontDelts",
+      "path_id": "muscle_frontDelts",
+      "display_name_en": "Front Delts",
+      "display_name_zh": "",
+      "genders": [
+        "male"
+      ]
+    },
+    {
+      "id": "sideDelts",
+      "path_id": "muscle_sideDelts",
+      "display_name_en": "Side Delts",
+      "display_name_zh": "",
+      "genders": [
+        "male"
+      ],
+      "path_ids": [
+        "muscle_sideDelts",
+        "muscle_sideDelts_2",
+        "muscle_sideDelts_3"
+      ]
+    },
+    {
+      "id": "rearDelts",
+      "path_id": "muscle_rearDelts",
+      "display_name_en": "Rear Delts",
+      "display_name_zh": "",
+      "genders": [
+        "male"
+      ],
+      "path_ids": [
+        "muscle_rearDelts",
+        "muscle_rearDelts_2"
+      ]
+    },
+    {
+      "id": "triceps",
+      "path_id": "muscle_triceps",
+      "display_name_en": "Triceps",
+      "display_name_zh": "",
+      "genders": [
+        "male"
+      ]
+    },
+    {
+      "id": "bicepsInner",
+      "path_id": "muscle_bicepsInner",
+      "display_name_en": "Biceps Inner",
+      "display_name_zh": "",
+      "genders": [
+        "male"
+      ],
+      "path_ids": [
+        "muscle_bicepsInner",
+        "muscle_bicepsInner_2"
+      ]
+    },
+    {
+      "id": "bicepsOuter",
+      "path_id": "muscle_bicepsOuter",
+      "display_name_en": "Biceps Outer",
+      "display_name_zh": "",
+      "genders": [
+        "male"
+      ],
+      "path_ids": [
+        "muscle_bicepsOuter",
+        "muscle_bicepsOuter_2"
+      ]
+    },
+    {
+      "id": "forearms",
+      "path_id": "muscle_forearms",
+      "display_name_en": "Forearms",
+      "display_name_zh": "",
+      "genders": [
+        "male"
+      ]
+    },
+    {
+      "id": "abs",
+      "path_id": "muscle_abs",
+      "display_name_en": "Abs",
+      "display_name_zh": "",
+      "genders": [
+        "male"
+      ]
+    },
+    {
+      "id": "obliques",
+      "path_id": "muscle_obliques",
+      "display_name_en": "Obliques",
+      "display_name_zh": "",
+      "genders": [
+        "male"
+      ],
+      "path_ids": [
+        "muscle_obliques",
+        "muscle_obliques_2",
+        "muscle_obliques_3"
+      ]
+    },
+    {
+      "id": "glutesUpper",
+      "path_id": "muscle_glutesUpper",
+      "display_name_en": "Glutes Upper",
+      "display_name_zh": "",
+      "genders": [
+        "male"
+      ],
+      "path_ids": [
+        "muscle_glutesUpper",
+        "muscle_glutesUpper_2"
+      ]
+    },
+    {
+      "id": "glutesMidLower",
+      "path_id": "muscle_glutesMidLower",
+      "display_name_en": "Glutes Mid-Lower",
+      "display_name_zh": "",
+      "genders": [
+        "male"
+      ]
+    },
+    {
+      "id": "quads",
+      "path_id": "muscle_quads",
+      "display_name_en": "Quads",
+      "display_name_zh": "",
+      "genders": [
+        "male"
+      ]
+    },
+    {
+      "id": "hamstrings",
+      "path_id": "muscle_hamstrings",
+      "display_name_en": "Hamstrings",
+      "display_name_zh": "",
+      "genders": [
+        "male"
+      ]
+    },
+    {
+      "id": "adductors",
+      "path_id": "muscle_adductors",
+      "display_name_en": "Adductors",
+      "display_name_zh": "",
+      "genders": [
+        "male"
+      ]
+    },
+    {
+      "id": "abductors",
+      "path_id": "muscle_abductors",
+      "display_name_en": "Abductors",
+      "display_name_zh": "",
+      "genders": [
+        "male"
+      ]
+    },
+    {
+      "id": "calves",
+      "path_id": "muscle_calves",
+      "display_name_en": "Calves",
+      "display_name_zh": "",
+      "genders": [
+        "male"
+      ]
+    },
+    {
+      "id": "neck",
+      "path_id": "muscle_neck",
+      "display_name_en": "Neck",
+      "display_name_zh": "",
+      "genders": [
+        "male"
+      ]
+    }
+  ],
+  "segment_parent_map": {
+    "chestUpper": "chest",
+    "chestMidLower": "chest",
+    "trapsUpper": "traps",
+    "trapsMidLower": "traps",
+    "glutesUpper": "glutes",
+    "glutesMidLower": "glutes",
+    "bicepsInner": "biceps",
+    "bicepsOuter": "biceps"
+  },
+  "legacy_group_expand_map": {
+    "chest": [
+      "chestUpper",
+      "chestMidLower"
+    ],
+    "lats": [
+      "lats"
+    ],
+    "traps": [
+      "trapsUpper",
+      "trapsMidLower"
+    ],
+    "rotatorCuffs": [
+      "rotatorCuffs"
+    ],
+    "lowerBack": [
+      "lowerBack"
+    ],
+    "frontDelts": [
+      "frontDelts"
+    ],
+    "sideDelts": [
+      "sideDelts"
+    ],
+    "rearDelts": [
+      "rearDelts"
+    ],
+    "triceps": [
+      "triceps"
+    ],
+    "biceps": [
+      "bicepsInner",
+      "bicepsOuter"
+    ],
+    "forearms": [
+      "forearms"
+    ],
+    "abs": [
+      "abs"
+    ],
+    "obliques": [
+      "obliques"
+    ],
+    "glutes": [
+      "glutesUpper",
+      "glutesMidLower"
+    ],
+    "quads": [
+      "quads"
+    ],
+    "hamstrings": [
+      "hamstrings"
+    ],
+    "adductors": [
+      "adductors"
+    ],
+    "abductors": [
+      "abductors"
+    ],
+    "calves": [
+      "calves"
+    ],
+    "neck": [
+      "neck"
+    ]
+  }
+}

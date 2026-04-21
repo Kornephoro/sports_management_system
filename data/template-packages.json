@@ -1,0 +1,39 @@
+[
+  {
+    "id": "41b3b4b4-3493-4ce5-af1f-9277e4f5a791",
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "name": "一分化202604",
+    "split_type": "single_day",
+    "enabled": true,
+    "notes": null,
+    "linked_program_id": null,
+    "last_used_at": null,
+    "days": [
+      {
+        "id": "225179d6-6972-4a9c-b60c-9ecc3b6bad31",
+        "day_code": "A",
+        "sequence_in_microcycle": 1,
+        "template_library_item_id": "53edf6bd-b815-4945-bf6d-2b9500e99fb4",
+        "label": "训练日 A",
+        "notes": null,
+        "progression_overrides": []
+      }
+    ],
+    "microcycle_slots": [
+      {
+        "slot_index": 1,
+        "type": "train",
+        "day_code": "A",
+        "label": null
+      },
+      {
+        "slot_index": 2,
+        "type": "rest",
+        "day_code": null,
+        "label": "休息"
+      }
+    ],
+    "created_at": "2026-04-15T07:59:06.715Z",
+    "updated_at": "2026-04-15T07:59:22.988Z"
+  }
+]

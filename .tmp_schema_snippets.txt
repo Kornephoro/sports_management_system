@@ -1,0 +1,363 @@
+model PlannedSession {
+  id                   String                         @id @default(uuid()) @db.Uuid
+  user_id              String                         @db.Uuid
+  program_id           String                         @db.Uuid
+  block_id             String?                        @db.Uuid
+  session_template_id  String?                        @db.Uuid
+  sequence_index       Int
+  session_date         DateTime                       @db.Date
+  status               SessionState
+  generation_reason    PlannedSessionGenerationReason
+  source_session_id    String?                        @db.Uuid
+  planned_start_at     DateTime?                      @db.Timestamptz(6)
+  planned_duration_min Int?
+  objective_summary    String?                        @db.Text
+  adaptation_snapshot  Json?
+  notes                String?                        @db.Text
+  created_at           DateTime                       @default(now()) @db.Timestamptz(6)
+  updated_at           DateTime                       @updatedAt @db.Timestamptz(6)
+
+  program            Program            @relation(fields: [program_id], references: [id])
+  block              Block?             @relation(fields: [block_id], references: [id])
+  session_template   SessionTemplate?   @relation(fields: [session_template_id], references: [id])
+  source_session     PlannedSession?    @relation("PlannedSessionSource", fields: [source_session_id], references: [id])
+  derived_sessions   PlannedSession[]   @relation("PlannedSessionSource")
+  planned_units      PlannedUnit[]
+  session_executions SessionExecution[]
+
+  @@unique([program_id, sequence_index])
+  @@index([user_id, session_date])
+  @@index([program_id])
+  @@index([block_id])
+  @@index([session_template_id])
+  @@index([source_session_id])
+}
+
+model PlannedUnit {
+  id                     String    @id @default(uuid()) @db.Uuid
+  planned_session_id     String    @db.Uuid
+  unit_template_id       String?   @db.Uuid
+  sequence_no            Int
+  status                 UnitState
+  selected_exercise_name String?
+  selected_variant_tags  Json?
+  progress_track_id      String?   @db.Uuid
+  target_payload         Json
+  progression_snapshot   Json?
+  constraint_snapshot    Json?
+  required               Boolean
+  notes                  String?   @db.Text
+  created_at             DateTime  @default(now()) @db.Timestamptz(6)
+  updated_at             DateTime  @updatedAt @db.Timestamptz(6)
+
+  planned_session PlannedSession        @relation(fields: [planned_session_id], references: [id])
+  unit_template   TrainingUnitTemplate? @relation(fields: [unit_template_id], references: [id])
+  progress_track  ProgressTrack?        @relation(fields: [progress_track_id], references: [id])
+  unit_executions UnitExecution[]
+  execution_sets  SessionExecutionSet[]
+
+  @@unique([planned_session_id, sequence_no])
+  @@index([planned_session_id])
+  @@index([unit_template_id])
+  @@index([progress_track_id])
+}
+
+model SessionExecution {
+  id                        String                           @id @default(uuid()) @db.Uuid
+  user_id                   String                           @db.Uuid
+  planned_session_id        String?                          @db.Uuid
+  program_id                String?                          @db.Uuid
+  block_id                  String?                          @db.Uuid
+  performed_at              DateTime                         @db.Timestamptz(6)
+  completion_status         SessionExecutionCompletionStatus
+  actual_duration_min       Int?
+  session_rpe               Decimal?                         @db.Decimal(3, 1)
+  pre_session_state         Json?
+  post_session_state        Json?
+  deviation_reason          String?                          @db.Text
+  notes                     String?                          @db.Text
+  imported_from_evidence_id String?                          @db.Uuid
+  created_at                DateTime                         @default(now()) @db.Timestamptz(6)
+  updated_at                DateTime                         @updatedAt @db.Timestamptz(6)
+
+  planned_session        PlannedSession?  @relation(fields: [planned_session_id], references: [id])
+  program                Program?         @relation(fields: [program_id], references: [id])
+  block                  Block?           @relation(fields: [block_id], references: [id])
+  imported_from_evidence EvidenceAsset?   @relation("SessionExecutionImportedEvidence", fields: [imported_from_evidence_id], references: [id])
+  unit_executions        UnitExecution[]
+  execution_sets         SessionExecutionSet[]
+  observations           Observation[]
+  injury_incidents       InjuryIncident[]
+
+  @@index([user_id, performed_at])
+  @@index([planned_session_id])
+  @@index([program_id])
+  @@index([block_id])
+  @@index([imported_from_evidence_id])
+}
+
+model SessionExecutionSet {
+  id                   String                    @id @default(uuid()) @db.Uuid
+  session_execution_id String                    @db.Uuid
+  planned_unit_id      String?                   @db.Uuid
+  set_index            Int
+  planned_set_type     String?
+  planned_reps         Int?
+  planned_weight       Decimal?                  @db.Decimal(10, 3)
+  planned_rpe          Decimal?                  @db.Decimal(3, 1)
+  planned_rest_seconds Int?
+  planned_tempo        String?
+  actual_reps          Int?
+  actual_weight        Decimal?                  @db.Decimal(10, 3)
+  actual_rpe           Decimal?                  @db.Decimal(3, 1)
+  actual_rest_seconds  Int?
+  actual_tempo         String?
+  status               SessionExecutionSetStatus
+  is_extra_set         Boolean                   @default(false)
+  note                 String?                   @db.Text
+  created_at           DateTime                  @default(now()) @db.Timestamptz(6)
+  updated_at           DateTime                  @updatedAt @db.Timestamptz(6)
+
+  session_execution SessionExecution @relation(fields: [session_execution_id], references: [id])
+model SessionExecution {
+  id                        String                           @id @default(uuid()) @db.Uuid
+  user_id                   String                           @db.Uuid
+  planned_session_id        String?                          @db.Uuid
+  program_id                String?                          @db.Uuid
+  block_id                  String?                          @db.Uuid
+  performed_at              DateTime                         @db.Timestamptz(6)
+  completion_status         SessionExecutionCompletionStatus
+  actual_duration_min       Int?
+  session_rpe               Decimal?                         @db.Decimal(3, 1)
+  pre_session_state         Json?
+  post_session_state        Json?
+  deviation_reason          String?                          @db.Text
+  notes                     String?                          @db.Text
+  imported_from_evidence_id String?                          @db.Uuid
+  created_at                DateTime                         @default(now()) @db.Timestamptz(6)
+  updated_at                DateTime                         @updatedAt @db.Timestamptz(6)
+
+  planned_session        PlannedSession?  @relation(fields: [planned_session_id], references: [id])
+  program                Program?         @relation(fields: [program_id], references: [id])
+  block                  Block?           @relation(fields: [block_id], references: [id])
+  imported_from_evidence EvidenceAsset?   @relation("SessionExecutionImportedEvidence", fields: [imported_from_evidence_id], references: [id])
+  unit_executions        UnitExecution[]
+  execution_sets         SessionExecutionSet[]
+  observations           Observation[]
+  injury_incidents       InjuryIncident[]
+
+  @@index([user_id, performed_at])
+  @@index([planned_session_id])
+  @@index([program_id])
+  @@index([block_id])
+  @@index([imported_from_evidence_id])
+}
+
+model SessionExecutionSet {
+  id                   String                    @id @default(uuid()) @db.Uuid
+  session_execution_id String                    @db.Uuid
+  planned_unit_id      String?                   @db.Uuid
+  set_index            Int
+  planned_set_type     String?
+  planned_reps         Int?
+  planned_weight       Decimal?                  @db.Decimal(10, 3)
+  planned_rpe          Decimal?                  @db.Decimal(3, 1)
+  planned_rest_seconds Int?
+  planned_tempo        String?
+  actual_reps          Int?
+  actual_weight        Decimal?                  @db.Decimal(10, 3)
+  actual_rpe           Decimal?                  @db.Decimal(3, 1)
+  actual_rest_seconds  Int?
+  actual_tempo         String?
+  status               SessionExecutionSetStatus
+  is_extra_set         Boolean                   @default(false)
+  note                 String?                   @db.Text
+  created_at           DateTime                  @default(now()) @db.Timestamptz(6)
+  updated_at           DateTime                  @updatedAt @db.Timestamptz(6)
+
+  session_execution SessionExecution @relation(fields: [session_execution_id], references: [id])
+  planned_unit      PlannedUnit?     @relation(fields: [planned_unit_id], references: [id])
+
+  @@unique([session_execution_id, planned_unit_id, set_index])
+  @@index([session_execution_id])
+  @@index([session_execution_id, planned_unit_id])
+  @@index([planned_unit_id])
+}
+
+model UnitExecution {
+  id                         String                        @id @default(uuid()) @db.Uuid
+  session_execution_id       String                        @db.Uuid
+  planned_unit_id            String?                       @db.Uuid
+  unit_template_id           String?                       @db.Uuid
+  progress_track_id          String?                       @db.Uuid
+  sequence_no                Int
+  completion_status          UnitExecutionCompletionStatus
+  actual_unit_name           String?
+  actual_payload             Json
+  set_logs                   Json?
+  result_flags               Json?
+  symptom_tags               Json?
+  perceived_exertion         Decimal?                      @db.Decimal(3, 1)
+  pain_score                 Int?
+  auto_progression_candidate Boolean?
+  notes                      String?                       @db.Text
+  imported_from_evidence_id  String?                       @db.Uuid
+  created_at                 DateTime                      @default(now()) @db.Timestamptz(6)
+  updated_at                 DateTime                      @updatedAt @db.Timestamptz(6)
+
+  session_execution      SessionExecution      @relation(fields: [session_execution_id], references: [id])
+  planned_unit           PlannedUnit?          @relation(fields: [planned_unit_id], references: [id])
+  unit_template          TrainingUnitTemplate? @relation(fields: [unit_template_id], references: [id])
+  progress_track         ProgressTrack?        @relation(fields: [progress_track_id], references: [id])
+  imported_from_evidence EvidenceAsset?        @relation("UnitExecutionImportedEvidence", fields: [imported_from_evidence_id], references: [id])
+  injury_incidents       InjuryIncident[]
+
+  @@unique([session_execution_id, sequence_no])
+  @@index([session_execution_id])
+  @@index([planned_unit_id])
+  @@index([unit_template_id])
+  @@index([progress_track_id])
+  @@index([imported_from_evidence_id])
+}
+
+model Observation {
+  id                          String            @id @default(uuid()) @db.Uuid
+  user_id                     String            @db.Uuid
+  observed_at                 DateTime          @db.Timestamptz(6)
+  observation_domain          ObservationDomain
+  metric_key                  String
+  value_numeric               Decimal?          @db.Decimal(10, 3)
+  value_text                  String?
+  value_json                  Json?
+  unit                        String?
+  source                      ObservationSource
+  confidence                  Decimal?          @db.Decimal(4, 3)
+  linked_program_id           String?           @db.Uuid
+  linked_session_execution_id String?           @db.Uuid
+  evidence_asset_id           String?           @db.Uuid
+  notes                       String?           @db.Text
+  created_at                  DateTime          @default(now()) @db.Timestamptz(6)
+  updated_at                  DateTime          @updatedAt @db.Timestamptz(6)
+
+  linked_program           Program?          @relation(fields: [linked_program_id], references: [id])
+model SessionExecutionSet {
+  id                   String                    @id @default(uuid()) @db.Uuid
+  session_execution_id String                    @db.Uuid
+  planned_unit_id      String?                   @db.Uuid
+  set_index            Int
+  planned_set_type     String?
+  planned_reps         Int?
+  planned_weight       Decimal?                  @db.Decimal(10, 3)
+  planned_rpe          Decimal?                  @db.Decimal(3, 1)
+  planned_rest_seconds Int?
+  planned_tempo        String?
+  actual_reps          Int?
+  actual_weight        Decimal?                  @db.Decimal(10, 3)
+  actual_rpe           Decimal?                  @db.Decimal(3, 1)
+  actual_rest_seconds  Int?
+  actual_tempo         String?
+  status               SessionExecutionSetStatus
+  is_extra_set         Boolean                   @default(false)
+  note                 String?                   @db.Text
+  created_at           DateTime                  @default(now()) @db.Timestamptz(6)
+  updated_at           DateTime                  @updatedAt @db.Timestamptz(6)
+
+  session_execution SessionExecution @relation(fields: [session_execution_id], references: [id])
+  planned_unit      PlannedUnit?     @relation(fields: [planned_unit_id], references: [id])
+
+  @@unique([session_execution_id, planned_unit_id, set_index])
+  @@index([session_execution_id])
+  @@index([session_execution_id, planned_unit_id])
+  @@index([planned_unit_id])
+}
+
+model UnitExecution {
+  id                         String                        @id @default(uuid()) @db.Uuid
+  session_execution_id       String                        @db.Uuid
+  planned_unit_id            String?                       @db.Uuid
+  unit_template_id           String?                       @db.Uuid
+  progress_track_id          String?                       @db.Uuid
+  sequence_no                Int
+  completion_status          UnitExecutionCompletionStatus
+  actual_unit_name           String?
+  actual_payload             Json
+  set_logs                   Json?
+  result_flags               Json?
+  symptom_tags               Json?
+  perceived_exertion         Decimal?                      @db.Decimal(3, 1)
+  pain_score                 Int?
+  auto_progression_candidate Boolean?
+  notes                      String?                       @db.Text
+  imported_from_evidence_id  String?                       @db.Uuid
+  created_at                 DateTime                      @default(now()) @db.Timestamptz(6)
+  updated_at                 DateTime                      @updatedAt @db.Timestamptz(6)
+
+  session_execution      SessionExecution      @relation(fields: [session_execution_id], references: [id])
+  planned_unit           PlannedUnit?          @relation(fields: [planned_unit_id], references: [id])
+  unit_template          TrainingUnitTemplate? @relation(fields: [unit_template_id], references: [id])
+  progress_track         ProgressTrack?        @relation(fields: [progress_track_id], references: [id])
+  imported_from_evidence EvidenceAsset?        @relation("UnitExecutionImportedEvidence", fields: [imported_from_evidence_id], references: [id])
+  injury_incidents       InjuryIncident[]
+
+  @@unique([session_execution_id, sequence_no])
+  @@index([session_execution_id])
+  @@index([planned_unit_id])
+  @@index([unit_template_id])
+  @@index([progress_track_id])
+  @@index([imported_from_evidence_id])
+}
+
+model Observation {
+  id                          String            @id @default(uuid()) @db.Uuid
+  user_id                     String            @db.Uuid
+  observed_at                 DateTime          @db.Timestamptz(6)
+  observation_domain          ObservationDomain
+  metric_key                  String
+  value_numeric               Decimal?          @db.Decimal(10, 3)
+  value_text                  String?
+  value_json                  Json?
+  unit                        String?
+  source                      ObservationSource
+  confidence                  Decimal?          @db.Decimal(4, 3)
+  linked_program_id           String?           @db.Uuid
+  linked_session_execution_id String?           @db.Uuid
+  evidence_asset_id           String?           @db.Uuid
+  notes                       String?           @db.Text
+  created_at                  DateTime          @default(now()) @db.Timestamptz(6)
+  updated_at                  DateTime          @updatedAt @db.Timestamptz(6)
+
+  linked_program           Program?          @relation(fields: [linked_program_id], references: [id])
+  linked_session_execution SessionExecution? @relation(fields: [linked_session_execution_id], references: [id])
+  evidence_asset           EvidenceAsset?    @relation(fields: [evidence_asset_id], references: [id])
+
+  @@index([user_id, metric_key, observed_at])
+  @@index([linked_program_id])
+  @@index([linked_session_execution_id])
+  @@index([evidence_asset_id])
+}
+
+model EvidenceAsset {
+  id                 String                    @id @default(uuid()) @db.Uuid
+  user_id            String                    @db.Uuid
+  asset_type         EvidenceAssetType
+  source_app         String?
+  domain_hint        EvidenceDomainHint
+  captured_at        DateTime?                 @db.Timestamptz(6)
+  uploaded_at        DateTime                  @db.Timestamptz(6)
+  storage_url        String                    @db.Text
+  mime_type          String
+  file_hash          String?
+  parse_status       EvidenceParseStatus
+  parser_version     String?
+  parsed_summary     Json?
+  confidence         Decimal?                  @db.Decimal(4, 3)
+  linked_entity_type EvidenceLinkedEntityType?
+  linked_entity_id   String?                   @db.Uuid
+  notes              String?                   @db.Text
+  created_at         DateTime                  @default(now()) @db.Timestamptz(6)
+  updated_at         DateTime                  @updatedAt @db.Timestamptz(6)
+
+  imported_session_executions SessionExecution[] @relation("SessionExecutionImportedEvidence")
+  imported_unit_executions    UnitExecution[]    @relation("UnitExecutionImportedEvidence")
+  observations                Observation[]
+  injury_incidents            InjuryIncident[]

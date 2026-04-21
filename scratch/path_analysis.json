@@ -1,0 +1,666 @@
+[
+  {
+    "index": 0,
+    "view": "Back",
+    "ymin": 17.9811,
+    "ymax": 945.961,
+    "xmin": 534.978,
+    "xmax": 1011.31
+  },
+  {
+    "index": 28,
+    "view": "Back",
+    "ymin": 118.917,
+    "ymax": 321.188,
+    "xmin": 774.163,
+    "xmax": 857.338
+  },
+  {
+    "index": 27,
+    "view": "Back",
+    "ymin": 118.942,
+    "ymax": 321.19,
+    "xmin": 691.047,
+    "xmax": 774.686
+  },
+  {
+    "index": 33,
+    "view": "Back",
+    "ymin": 118.942,
+    "ymax": 214.095,
+    "xmin": 691.047,
+    "xmax": 774.686
+  },
+  {
+    "index": 41,
+    "view": "Back",
+    "ymin": 121.94,
+    "ymax": 130.07,
+    "xmin": 778.411,
+    "xmax": 791.152
+  },
+  {
+    "index": 34,
+    "view": "Back",
+    "ymin": 122.001,
+    "ymax": 213.793,
+    "xmin": 776.1,
+    "xmax": 856.709
+  },
+  {
+    "index": 26,
+    "view": "Back",
+    "ymin": 122.052,
+    "ymax": 122.134,
+    "xmin": 778.34,
+    "xmax": 778.507
+  },
+  {
+    "index": 25,
+    "view": "Back",
+    "ymin": 130.942,
+    "ymax": 133.279,
+    "xmin": 792.328,
+    "xmax": 795.351
+  },
+  {
+    "index": 24,
+    "view": "Back",
+    "ymin": 138.541,
+    "ymax": 141.58,
+    "xmin": 801.582,
+    "xmax": 804.918
+  },
+  {
+    "index": 39,
+    "view": "Back",
+    "ymin": 148.247,
+    "ymax": 321.179,
+    "xmin": 774.64,
+    "xmax": 857.336
+  },
+  {
+    "index": 40,
+    "view": "Back",
+    "ymin": 152.114,
+    "ymax": 172.543,
+    "xmin": 815.673,
+    "xmax": 852.469
+  },
+  {
+    "index": 23,
+    "view": "Back",
+    "ymin": 161.749,
+    "ymax": 162.902,
+    "xmin": 718.389,
+    "xmax": 720.514
+  },
+  {
+    "index": 22,
+    "view": "Back",
+    "ymin": 167.184,
+    "ymax": 171.31,
+    "xmin": 699.451,
+    "xmax": 709.383
+  },
+  {
+    "index": 51,
+    "view": "Back",
+    "ymin": 174.621,
+    "ymax": 253.106,
+    "xmin": 863.0,
+    "xmax": 913.319
+  },
+  {
+    "index": 21,
+    "view": "Back",
+    "ymin": 174.772,
+    "ymax": 175.365,
+    "xmin": 856.133,
+    "xmax": 856.46
+  },
+  {
+    "index": 52,
+    "view": "Back",
+    "ymin": 175.318,
+    "ymax": 253.802,
+    "xmin": 633.648,
+    "xmax": 683.967
+  },
+  {
+    "index": 47,
+    "view": "Back",
+    "ymin": 175.541,
+    "ymax": 253.674,
+    "xmin": 836.956,
+    "xmax": 912.205
+  },
+  {
+    "index": 50,
+    "view": "Back",
+    "ymin": 175.562,
+    "ymax": 176.663,
+    "xmin": 675.738,
+    "xmax": 681.983
+  },
+  {
+    "index": 46,
+    "view": "Back",
+    "ymin": 175.646,
+    "ymax": 252.946,
+    "xmin": 640.082,
+    "xmax": 710.157
+  },
+  {
+    "index": 37,
+    "view": "Back",
+    "ymin": 175.733,
+    "ymax": 177.447,
+    "xmin": 855.097,
+    "xmax": 856.423
+  },
+  {
+    "index": 19,
+    "view": "Back",
+    "ymin": 176.389,
+    "ymax": 177.801,
+    "xmin": 854.676,
+    "xmax": 856.101
+  },
+  {
+    "index": 20,
+    "view": "Back",
+    "ymin": 176.576,
+    "ymax": 177.169,
+    "xmin": 692.428,
+    "xmax": 692.981
+  },
+  {
+    "index": 49,
+    "view": "Back",
+    "ymin": 177.051,
+    "ymax": 177.968,
+    "xmin": 671.149,
+    "xmax": 674.248
+  },
+  {
+    "index": 16,
+    "view": "Back",
+    "ymin": 179.168,
+    "ymax": 182.216,
+    "xmin": 847.646,
+    "xmax": 852.762
+  },
+  {
+    "index": 48,
+    "view": "Back",
+    "ymin": 180.592,
+    "ymax": 181.946,
+    "xmin": 661.282,
+    "xmax": 664.137
+  },
+  {
+    "index": 14,
+    "view": "Back",
+    "ymin": 186.604,
+    "ymax": 198.844,
+    "xmin": 825.976,
+    "xmax": 839.917
+  },
+  {
+    "index": 15,
+    "view": "Back",
+    "ymin": 189.851,
+    "ymax": 190.88,
+    "xmin": 713.388,
+    "xmax": 714.623
+  },
+  {
+    "index": 38,
+    "view": "Back",
+    "ymin": 195.942,
+    "ymax": 321.023,
+    "xmin": 719.874,
+    "xmax": 773.566
+  },
+  {
+    "index": 42,
+    "view": "Back",
+    "ymin": 196.347,
+    "ymax": 258.517,
+    "xmin": 679.504,
+    "xmax": 868.802
+  },
+  {
+    "index": 36,
+    "view": "Back",
+    "ymin": 196.494,
+    "ymax": 197.2,
+    "xmin": 827.358,
+    "xmax": 827.994
+  },
+  {
+    "index": 13,
+    "view": "Back",
+    "ymin": 202.896,
+    "ymax": 208.799,
+    "xmin": 821.017,
+    "xmax": 823.245
+  },
+  {
+    "index": 35,
+    "view": "Back",
+    "ymin": 206.595,
+    "ymax": 207.036,
+    "xmin": 821.496,
+    "xmax": 821.636
+  },
+  {
+    "index": 12,
+    "view": "Back",
+    "ymin": 213.794,
+    "ymax": 217.114,
+    "xmin": 819.617,
+    "xmax": 820.064
+  },
+  {
+    "index": 11,
+    "view": "Back",
+    "ymin": 223.012,
+    "ymax": 227.911,
+    "xmin": 818.453,
+    "xmax": 818.969
+  },
+  {
+    "index": 32,
+    "view": "Back",
+    "ymin": 223.013,
+    "ymax": 235.258,
+    "xmin": 817.499,
+    "xmax": 818.969
+  },
+  {
+    "index": 31,
+    "view": "Back",
+    "ymin": 236.456,
+    "ymax": 251.304,
+    "xmin": 813.569,
+    "xmax": 817.304
+  },
+  {
+    "index": 10,
+    "view": "Back",
+    "ymin": 239.966,
+    "ymax": 255.882,
+    "xmin": 812.147,
+    "xmax": 816.631
+  },
+  {
+    "index": 9,
+    "view": "Back",
+    "ymin": 260.453,
+    "ymax": 268.366,
+    "xmin": 807.604,
+    "xmax": 810.607
+  },
+  {
+    "index": 8,
+    "view": "Back",
+    "ymin": 272.801,
+    "ymax": 304.761,
+    "xmin": 788.592,
+    "xmax": 805.694
+  },
+  {
+    "index": 7,
+    "view": "Back",
+    "ymin": 308.673,
+    "ymax": 313.623,
+    "xmin": 782.053,
+    "xmax": 785.904
+  },
+  {
+    "index": 6,
+    "view": "Back",
+    "ymin": 314.732,
+    "ymax": 316.993,
+    "xmin": 772.208,
+    "xmax": 772.328
+  },
+  {
+    "index": 30,
+    "view": "Back",
+    "ymin": 315.567,
+    "ymax": 316.564,
+    "xmin": 772.236,
+    "xmax": 772.293
+  },
+  {
+    "index": 5,
+    "view": "Back",
+    "ymin": 315.949,
+    "ymax": 317.618,
+    "xmin": 778.409,
+    "xmax": 780.003
+  },
+  {
+    "index": 29,
+    "view": "Back",
+    "ymin": 318.158,
+    "ymax": 318.826,
+    "xmin": 777.173,
+    "xmax": 777.866
+  },
+  {
+    "index": 43,
+    "view": "Back",
+    "ymin": 321.608,
+    "ymax": 433.707,
+    "xmin": 732.983,
+    "xmax": 813.937
+  },
+  {
+    "index": 82,
+    "view": "Back",
+    "ymin": 355.0,
+    "ymax": 406.0,
+    "xmin": 823.46,
+    "xmax": 850.36
+  },
+  {
+    "index": 81,
+    "view": "Back",
+    "ymin": 356.0,
+    "ymax": 407.0,
+    "xmin": 697.0,
+    "xmax": 723.9
+  },
+  {
+    "index": 69,
+    "view": "Back",
+    "ymin": 400.96,
+    "ymax": 450.474,
+    "xmin": 780.5,
+    "xmax": 857.0
+  },
+  {
+    "index": 66,
+    "view": "Back",
+    "ymin": 401.09,
+    "ymax": 518.069,
+    "xmin": 682.492,
+    "xmax": 864.315
+  },
+  {
+    "index": 68,
+    "view": "Back",
+    "ymin": 401.297,
+    "ymax": 451.348,
+    "xmin": 689.074,
+    "xmax": 766.639
+  },
+  {
+    "index": 67,
+    "view": "Back",
+    "ymin": 404.65,
+    "ymax": 518.646,
+    "xmin": 682.492,
+    "xmax": 864.315
+  },
+  {
+    "index": 71,
+    "view": "Back",
+    "ymin": 516.807,
+    "ymax": 689.985,
+    "xmin": 691.042,
+    "xmax": 856.607
+  },
+  {
+    "index": 1,
+    "view": "Front",
+    "ymin": 16.9811,
+    "ymax": 948.546,
+    "xmin": 33.9778,
+    "xmax": 510.314
+  },
+  {
+    "index": 75,
+    "view": "Front",
+    "ymin": 129.803,
+    "ymax": 190.276,
+    "xmin": 231.604,
+    "xmax": 313.7
+  },
+  {
+    "index": 17,
+    "view": "Front",
+    "ymin": 145.242,
+    "ymax": 182.743,
+    "xmin": 191.768,
+    "xmax": 238.727
+  },
+  {
+    "index": 18,
+    "view": "Front",
+    "ymin": 148.868,
+    "ymax": 182.739,
+    "xmin": 307.576,
+    "xmax": 355.16
+  },
+  {
+    "index": 45,
+    "view": "Front",
+    "ymin": 175.559,
+    "ymax": 259.53,
+    "xmin": 127.937,
+    "xmax": 414.227
+  },
+  {
+    "index": 44,
+    "view": "Front",
+    "ymin": 182.633,
+    "ymax": 269.257,
+    "xmin": 140.468,
+    "xmax": 404.552
+  },
+  {
+    "index": 76,
+    "view": "Front",
+    "ymin": 182.781,
+    "ymax": 236.271,
+    "xmin": 183.187,
+    "xmax": 268.185
+  },
+  {
+    "index": 77,
+    "view": "Front",
+    "ymin": 182.781,
+    "ymax": 236.271,
+    "xmin": 277.0,
+    "xmax": 361.998
+  },
+  {
+    "index": 2,
+    "view": "Front",
+    "ymin": 182.999,
+    "ymax": 285.917,
+    "xmin": 181.715,
+    "xmax": 363.477
+  },
+  {
+    "index": 79,
+    "view": "Front",
+    "ymin": 183.838,
+    "ymax": 285.699,
+    "xmin": 272.955,
+    "xmax": 362.328
+  },
+  {
+    "index": 78,
+    "view": "Front",
+    "ymin": 194.863,
+    "ymax": 285.7,
+    "xmin": 182.772,
+    "xmax": 272.147
+  },
+  {
+    "index": 80,
+    "view": "Front",
+    "ymin": 215.78,
+    "ymax": 217.463,
+    "xmin": 188.801,
+    "xmax": 189.631
+  },
+  {
+    "index": 62,
+    "view": "Front",
+    "ymin": 238.0,
+    "ymax": 347.0,
+    "xmin": 367.0,
+    "xmax": 407.487
+  },
+  {
+    "index": 54,
+    "view": "Front",
+    "ymin": 238.014,
+    "ymax": 347.014,
+    "xmin": 137.606,
+    "xmax": 407.851
+  },
+  {
+    "index": 55,
+    "view": "Front",
+    "ymin": 238.014,
+    "ymax": 347.014,
+    "xmin": 142.542,
+    "xmax": 187.978
+  },
+  {
+    "index": 57,
+    "view": "Front",
+    "ymin": 238.014,
+    "ymax": 346.982,
+    "xmin": 362.442,
+    "xmax": 402.526
+  },
+  {
+    "index": 61,
+    "view": "Front",
+    "ymin": 238.674,
+    "ymax": 346.179,
+    "xmin": 137.605,
+    "xmax": 177.942
+  },
+  {
+    "index": 60,
+    "view": "Front",
+    "ymin": 253.224,
+    "ymax": 254.755,
+    "xmin": 157.744,
+    "xmax": 159.484
+  },
+  {
+    "index": 59,
+    "view": "Front",
+    "ymin": 258.275,
+    "ymax": 263.444,
+    "xmin": 391.566,
+    "xmax": 396.173
+  },
+  {
+    "index": 64,
+    "view": "Front",
+    "ymin": 273.281,
+    "ymax": 500.711,
+    "xmin": 224.728,
+    "xmax": 319.688
+  },
+  {
+    "index": 65,
+    "view": "Front",
+    "ymin": 280.536,
+    "ymax": 456.0,
+    "xmin": 194.372,
+    "xmax": 350.91
+  },
+  {
+    "index": 56,
+    "view": "Front",
+    "ymin": 308.67,
+    "ymax": 347.014,
+    "xmin": 402.535,
+    "xmax": 407.364
+  },
+  {
+    "index": 58,
+    "view": "Front",
+    "ymin": 340.227,
+    "ymax": 341.392,
+    "xmin": 140.769,
+    "xmax": 141.06
+  },
+  {
+    "index": 70,
+    "view": "Front",
+    "ymin": 454.032,
+    "ymax": 659.859,
+    "xmin": 189.517,
+    "xmax": 355.955
+  },
+  {
+    "index": 4,
+    "view": "Joint",
+    "ymin": 118.915,
+    "ymax": 321.191,
+    "xmin": 191.768,
+    "xmax": 857.339
+  },
+  {
+    "index": 53,
+    "view": "Joint",
+    "ymin": 224.798,
+    "ymax": 360.889,
+    "xmin": 123.352,
+    "xmax": 923.174
+  },
+  {
+    "index": 3,
+    "view": "Joint",
+    "ymin": 237.739,
+    "ymax": 397.325,
+    "xmin": 181.921,
+    "xmax": 864.904
+  },
+  {
+    "index": 63,
+    "view": "Joint",
+    "ymin": 315.858,
+    "ymax": 460.019,
+    "xmin": 76.9646,
+    "xmax": 966.392
+  },
+  {
+    "index": 73,
+    "view": "Joint",
+    "ymin": 409.527,
+    "ymax": 644.876,
+    "xmin": 174.406,
+    "xmax": 867.062
+  },
+  {
+    "index": 72,
+    "view": "Joint",
+    "ymin": 422.179,
+    "ymax": 653.96,
+    "xmin": 205.397,
+    "xmax": 803.956
+  },
+  {
+    "index": 74,
+    "view": "Joint",
+    "ymin": 666.799,
+    "ymax": 888.052,
+    "xmin": 178.592,
+    "xmax": 868.185
+  }
+]

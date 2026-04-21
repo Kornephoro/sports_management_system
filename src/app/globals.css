@@ -1,0 +1,78 @@
+@import "tailwindcss";
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #18181b;
+  --surface: #ffffff;
+  --surface-soft: #f8fafc;
+  --border-subtle: #e4e4e7;
+  
+  /* Muscle Map Tokens */
+  --muscle-silhouette: #f1f1f4; /* Zinc-100 */
+  --muscle-highlight-primary: #2563eb; /* Blue-600 */
+  --muscle-highlight-secondary: #60a5fa; /* Blue-400 */
+  --muscle-outline: rgba(0, 0, 0, 0.05);
+  --accent-neon-glow: rgba(37, 99, 235, 0.4);
+
+  /* Cyber Clinical Light Tokens */
+  --clinical-glass: rgba(255, 255, 255, 0.7);
+  --clinical-border: rgba(0, 0, 0, 0.05);
+}
+
+html.theme-dark {
+  --background: #09090b; /* Zinc 950 for high-density depth */
+  --foreground: #f4f4f5;
+  --surface: #18181b;
+  --surface-soft: #09090b;
+  --border-subtle: #27272a;
+  
+  /* Cyber Clinical Dark Tokens */
+  --clinical-glass: rgba(24, 24, 27, 0.4);
+  --clinical-border: rgba(255, 255, 255, 0.08);
+
+  /* Muscle Map Tokens Dark */
+  --muscle-silhouette: #1e1e21; /* Dark Grey Silhouette */
+  --muscle-highlight-primary: #3b82f6; /* Neon Blue */
+  --muscle-highlight-secondary: #0ea5e9; /* Sky Neon */
+  --muscle-outline: rgba(255, 255, 255, 0.1);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Outfit", "Inter", -apple-system, sans-serif;
+}
+
+/* Glassmorphism Utility */
+.clinical-glass {
+  background: var(--clinical-glass);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--clinical-border);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Anatomy Heatmap Pulse */
+.anatomy-pulse {
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { filter: brightness(1); }
+  50% { filter: brightness(1.5) drop-shadow(0 0 12px var(--accent-neon-glow)); }
+}
+
+.leader-line {
+  stroke-dasharray: 4;
+  animation: dash 20s linear infinite;
+}
+
+@keyframes dash {
+  from { stroke-dashoffset: 200; }
+  to { stroke-dashoffset: 0; }
+}

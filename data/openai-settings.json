@@ -1,0 +1,10 @@
+[
+  {
+    "user_id": "00000000-0000-0000-0000-000000000001",
+    "base_url": "https://api.deepseek.com",
+    "api_key": "sk-a4b0ee59818c4fd9aeff719bc02b52bb",
+    "model": "deepseek-chat",
+    "created_at": "2026-04-20T03:12:50.185Z",
+    "updated_at": "2026-04-20T03:12:50.185Z"
+  }
+]
